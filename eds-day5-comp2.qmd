@@ -3,3 +3,36 @@ title: "Day 5 Comp 2"
 format: html
 editor: visual
 ---
+
+## Some logical operators
+
+-   == : does this match
+
+-   = : this is this value
+
+-   != : do these NOT match
+
+-   \>,\<, \>=,\<=
+
+-   &, \| (or),
+
+```{r}
+cat <- 10
+dog <- 7
+cat> dog 
+
+dog > cat | cat < 20
+
+
+dog < cat & cat == 10
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+ggplot(data = mtcars, aes( x = wt, y = mpg))+ 
+  geom_point(color='red', aes(size=mpg, color= wt))+
+  labs(x= "car weight ( 1000 lbs)", y= " MPG", title= " Car weight efficienccy relationship ")
+```
